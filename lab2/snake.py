@@ -21,7 +21,7 @@ if sys.platform == 'win32':
 else:
     serialDevFile = '/dev/cu.usbmodem14201'
 
-ser=serial.Serial(serialDevFile, 9600, timeout=0)
+ser=serial.Serial(serialDevFile, 115200, timeout=0)
 
 delay = 0.1
 
