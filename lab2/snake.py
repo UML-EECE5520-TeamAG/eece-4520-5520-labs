@@ -145,6 +145,8 @@ while True:
             ser.write(b'G')
             food.color("gold")
             ppa = 20
+            pen.clear()
+            pen.write("Score: {}  High Score: {}  P/A: {}".format(score, high_score, ppa), align="center", font=("Courier", 24, "normal")) 
 
     # Check for a collision with the border
     if head.xcor()>290 or head.xcor()<-290 or head.ycor()>290 or head.ycor()<-290:
